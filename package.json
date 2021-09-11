@@ -1,7 +1,7 @@
 {
     "name": "commanderoptions",
     "version": "1.0.0",
-    "description": "Hands-on tutorial for the various option features of Commander.",
+    "description": "Hands-on tutorial for Commander's option features.",
     "main": "app.js",
     "author": "tsmx <dev@tsmx.net>",
     "license": "MIT",
@@ -13,6 +13,7 @@
         "CLI",
         "command-line",
         "options",
-        "tutorial"
+        "tutorial",
+        "hands-on"
     ]
 }
