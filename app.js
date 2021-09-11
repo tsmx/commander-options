@@ -1,10 +1,12 @@
+#!/usr/bin/env node
+
 const { program } = require('commander');
 
-const processListOption = (value, _previous) => {
+const listOption = (value, _previous) => {
   return value.split(',');
 }
 
-const processConcatOption = (value, previous) => {
+const concatOption = (value, previous) => {
   return previous + value;
 }
 
@@ -38,8 +40,8 @@ program
   .option('-o, --option', 'option for testing interaction with --no-option')
   .option('-no, --no-option', 'option with negation (name starting with \'--no-\')')
   .option('-s, --split-name-option <value>', 'option with a name splitted by \'-\'')
-  .option('-cl, --customlist <items>', 'custom processing returning a list from a comma separated string', processListOption)
-  .option('-cc, --customconcat <item>', 'custom processing returning the concatenation of all occurences', processConcatOption, '')
+  .option('-l, --list <items>', 'list from a comma separated string', listOption)
+  .option('-c, --concat <item>', 'concatenation of all occurences', concatOption, '')
   .requiredOption('-r, --required <value>', 'required option')
   .action(() => {
     console.log('program executed');
