@@ -6,7 +6,7 @@
     "author": "tsmx <dev@tsmx.net>",
     "license": "MIT",
     "dependencies": {
-        "commander": "^8.1.0"
+        "commander": "^10.0.1"
     },
     "keywords": [
         "Commander",
